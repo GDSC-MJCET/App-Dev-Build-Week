@@ -15,8 +15,8 @@ void main() {
   // finalVar = 56;
   print(finalVar);
   // Final and const work the same way.
-  // Final variable creates a runtime constant
-  // Const variable creates a compile-time constant
+  // Final - runtime constant
+  // Const - compile-time constant
 
   // Data Types
   int a = 90; // Int is used to store integer type data
@@ -35,7 +35,6 @@ void main() {
   List<String> fruits = ["Apple", "Banana", "Grapes", "Mango"];
   print(fruits);
 
-  // Similarly, a List can be of int type and double type. Below are examples of both
   List<int> number = [10, 30, 50, 20, 45, 70, 65];
   print(number);
 
@@ -67,8 +66,7 @@ void main() {
   Map<int, String> map = {1: "One", 2: "Two", 3: "Three"};
 
   // Map<key, value>, here key and value denote the datatype of the key and the value we want to store
-  // The value can be accessed using the key
-  // The key has to be unique and the value can be duplicate
+  // The value can be accessed using the key. The key is unique
   print(map[2]);
   print(map.values);
   print(map.keys);
@@ -92,6 +90,13 @@ void main() {
   }
 
   add(20, 80);
+
+  String addStrings(String a, String b) {
+    return a + b;
+  }
+
+  addStrings("Hello", "World");
+
   // In the above function, int is the return type
   // The function definition is defined as returnType functionName(argument) {}
   // The functions can be short hand as well
@@ -114,7 +119,9 @@ void main() {
   print(firstNumber * secondNumber);
   print(firstNumber % secondNumber);
   String name = "Some name"; // Replace with your name
-  print("This is $name");
+  print("My name is $name");
+  int aNumber = 90;
+  print("This is $aNumber");
 
   // Control Flow
   // If-else statement
@@ -158,7 +165,7 @@ void main() {
 
   // Loops
   // For loop
-  // The syntax of a for loop is (initialization, condition, increment/decrement) {}
+  // The syntax of a for loop is for(initialization, condition, increment/decrement) {}
   List<String> alphabets = ["A", "B", "C", "D", "E"];
   for (int i = 0; i <= alphabets.length; i++) {
     print(alphabets[i]);
